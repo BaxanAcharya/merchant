@@ -1,14 +1,15 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import { Navigate } from "react-router-dom";
 import generatehash from "../helpers/hash";
 
 const PrivateRoute = ({ children }) => {
-  const localHash = localStorage.getItem("hash");
+  const localHash = localStorage.getItem("hashValue");
 
   const acutalHash = generatehash("abc@gmail.com", "123456");
 
-  return acutalHash === localHash ? children : <Navigate to={"/"} />;
+  console.log(localHash, acutalHash);
+
+  return acutalHash == localHash ? children : <Navigate to={"/"} />;
 };
 
 export default PrivateRoute;
