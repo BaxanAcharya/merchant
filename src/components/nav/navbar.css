@@ -1,0 +1,43 @@
+.nav-bar{
+    background-color: #fff;
+    border-bottom: 2px solid #EEF3F5;
+    box-shadow: 0 1px 0 rgba(0,0,0,.04);
+    height: 56px;
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-logo{
+    margin-top: 5px;
+    height: 90%;
+    width: 56px;
+    padding: 0 15px;
+    border-radius: 25px;
+}
+
+.nav-brand{
+    display: flex;
+    align-items: center;
+}
+
+.nav-brand-text{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.nav-bar-action{
+    margin-right: 20px;
+}
+
+.nav-bar-links{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-bar-links-active{
+    text-decoration: none;
+    color: #F44336;
+    font-weight: bold;  
+}
